@@ -1,0 +1,218 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pfp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 50%;
+
+}
+#menulist{
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+p{
+    font-family:monospace;
+    font-size: x-large;
+
+}
+
+.top {
+    height: 50px;
+
+}
+
+.middle {
+    text-align: center;
+
+}
+
+hr {
+    width: 300px;
+    height: 3px;
+    background-color: rgb(102, 99, 99);
+    border-radius: 10px;
+}
+
+.top-left {
+    width: 30%;
+
+}
+
+.top-right {
+    width: 70%;
+}
+
+.ld {
+    /* height: 10%; */
+    width: 31px;
+    padding-left: 25px;
+    /* padding-top: 5px; */
+    /* right: 2px; */
+}
+
+.tw {
+    width: 40px;
+    top: 4px;
+    position: relative;
+    left: 2px;
+}
+
+.ig {
+    width: 37px;
+    position: relative;
+    top: 2px;
+}
+
+button {
+    float: right;
+    /* margin-right: 60px; */
+    top: 10px;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+
+#projects {
+    margin-right: 100px;
+}
+
+.button-arounder {
+    font-size: larger;
+    background: transparent;
+
+
+    box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+    transform: translateY(0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    --dur: .05s;
+    --delay: .05s;
+    --radius: 16px;
+
+    transition:
+        border-top-left-radius var(--dur) var(--delay) ease-out,
+        border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+        border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+        border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+        box-shadow calc(var(--dur) * 4) ease-out,
+        transform calc(var(--dur) * 4) ease-out,
+        background calc(var(--dur) * 4) steps(4, jump-end);
+}
+
+.button-arounder:hover,
+.button-arounder:focus {
+    box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .1);
+    transform: translateY(-4px);
+    background: hsl(240, 2%, 13%);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    color: antiquewhite;
+}
+.abinfo, .abskills, .bottom{
+    margin-top: 150px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.bottom{
+
+    height: 400px;
+    text-align: center;
+}
+.btn {
+    
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Arima', cursive;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+  .rand{
+    margin-bottom: 50px;
+  }
+
+  .copyright{
+    color:#4f5050;
+    font-size:0.75rem;
+}
+@media screen and (max-width: 900px) {
+    .pfp {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .pfp {
+      width: 70%;
+    }
+
+    .abinfo,
+    .abskills,
+    .bottom {
+      margin-top: 100px;
+      font-size: large;
+    }
+
+    .btn {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .pfp {
+      width: 90%;
+    }
+
+    .abinfo,
+    .abskills,
+    .bottom {
+      margin-top: 50px;
+      font-size: small;
+    }
+
+    .btn {
+      font-size: smaller;
+    }
+    .middle{
+      bottom: 10px;
+    }
+    #projects{
+      margin-right: 50px;
+    }
+  }
+    
+  
